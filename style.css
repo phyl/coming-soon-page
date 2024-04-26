@@ -9,8 +9,11 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  
 }
-
 
 :root {
   --desaturated-red: hsl(0, 36%, 70%);
@@ -23,6 +26,8 @@ main {
   margin: 0;
   padding: 5px;
   background: url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display:  inline-flex;
 
 }
@@ -37,7 +42,7 @@ main {
 
 .container {
     max-width: 1440px;
-    margin: 15%;
+    margin: 3% 15% 3% 15%;
 }
 
 @media screen and (max-width: 600px) {
@@ -95,6 +100,8 @@ h1 {
   font-size: 4em;
   margin: 0;
   font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3em;
 }
 
 .h1-1 {
@@ -105,10 +112,40 @@ p {
   color: var(--desaturated-red);
 }
 
-input {
+.input {
   color: var(--desaturated-red);
+  border: 1px solid ;
+  border-radius: 1.7em;
+  padding: 1.5em;
+  height: 50px;
 }
 
+.icon {
+  background-color: var(--soft-red);
+  color: var(--desaturated-red);
+  padding:  0.5em  1.5em;
+  height: 50px;
+  position: relative;
+  width:80px;
+  border: 1px solid var(--soft-red);
+  border-radius: 1.7em;
+  transform: translateX(-40px);
+}
+
+.icon-image {
+  padding: 0.5em .1em;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-submission{
+  display: inline-flex;
+}
 
 .attribution {
   font-size: 11px; text-align: center; 
