@@ -1,4 +1,119 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 body {
-    height: 500px;
-    background: url(/images/bg-pattern-desktop.svg);
+    margin: 0;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  
+}
+
+main {
+  margin: 0;
+  padding: 5px;
+  background: url(/images/bg-pattern-desktop.svg);
+  display:  inline-flex;
+
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    display:  block;
+  
+  }
+  
+}
+
+.container {
+    max-width: 1440px;
+    margin: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 1%;
+}
+}
+
+
+.text {
+  width: 100%;
+  padding: 3em;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    width: 100%;
+    margin: auto; /* Ensures that it is centered */
+  }
+}
+
+.hero-desktop {
+  width: 100%;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .hero-desktop {
+    display: none;
+}
+}
+
+
+.hero-mobile {
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: auto; /* Ensures that it is centered */
+  margin-bottom: 25px; /* Space between */
+  display: none;
+  }
+
+@media screen and (max-width: 600px) {
+.hero-mobile {
+  visibility: visible;
+  display: block;
+  }
+}
+
+.logo {
+  padding: 3em;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+  font-weight: 400;
+}
+
+.h1-1 {
+  color: var(--desaturated-red);
+}
+
+p {
+  color: var(--desaturated-red);
+}
+
+input {
+  color: var(--desaturated-red);
+}
+
+
+.attribution {
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }

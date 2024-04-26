@@ -3,32 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+  <div class="container">
+  <main> <!-- Main tag should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms and must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element-->
+<div class="text">
+  <div class="logo">
+    <img src="./images/logo.svg" alt="">
+  </div>
+  <div class="text">
+    
+    <h1 class="h1-1">WE'RE</h1>
+    <h1>COMING SOON</h1>
+    <p>Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.
+    </p>
 
-  We're coming soon
+  <form action="post">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+    <input type="text" value="Email Address">
+    <input type="button" value="">
+    <img src="/images/icon-arrow.svg" alt="submit arrow">
+</form>
+  </div>
+</div>
+<div class="hero-desktop">
+  <img src="/images/hero-desktop.jpg" alt="">
+</div>
+<div class="hero-mobile">
+    <img src="/images/hero-mobile.jpg" alt="">
+</div>
   
+</main>
+</div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
 </body>
 </html>
