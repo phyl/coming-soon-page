@@ -1,156 +1,306 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-body {
-    margin: 0;
-    height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
-    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 :root {
-  --desaturated-red: hsl(0, 36%, 70%);
-  --soft-red: hsl(0, 93%, 68%);
-  --dark-grayish-red: hsl(0, 6%, 24%);
-  
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+    overflow-wrap: break-word;
+    max-height: 100vh;
+    /* margin: 10% 5%; */
+}
+
+@media screen and (max-width: 600px) {
+    
+    body {
+      display: block;
+      text-align: center;
+      align-items: center;
+    }
 }
 
 main {
-  margin: 0;
-  padding: 5px;
-  background: url(/images/bg-pattern-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:  inline-flex;
-
-}
-
-@media screen and (max-width: 600px) {
-  main {
-    display:  block;
+  max-width: 100%;
+  overflow-x: hidden;
   
   }
-  
+
+  /* @media screen and (min-width: 959px) {
+    main {
+      padding: 10% 5%;
+      
+      }
+
+  } */
+
+  @media screen and (max-width: 960px) {
+   main {
+        margin: 5%;
+        max-width: 100wh;
+        overflow-wrap: break-word;
+    }
 }
 
-.container {
-    max-width: 1440px;
-    margin: 3% 15% 3% 15%;
+  @media screen and (max-width: 600px) {
+    
+    main {
+      margin: 0%;
+      text-align: center;
+      overflow: hidden;
+      overflow-wrap: break-word;
+    }
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    margin: 1%;
-}
-}
-
-
-.text {
-  width: 100%;
-  padding: 3em;
-  display: inline-block;
+.content {
+  display: inline-flex;
+  padding: 10% 5%;
 }
 
-@media screen and (max-width: 600px) {
-  .text {
-    width: 100%;
-    margin: auto; /* Ensures that it is centered */
+@media screen and (max-width: 960px) {
+  .content {
+    display: block;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   }
 }
 
-.hero-desktop {
-  width: 100%;
-  
-}
-
 @media screen and (max-width: 600px) {
-  .hero-desktop {
-    display: none;
-}
-}
-
-
-.hero-mobile {
-  background-repeat: no-repeat;
-  width: 100%;
-  margin: auto; /* Ensures that it is centered */
-  margin-bottom: 25px; /* Space between */
-  display: none;
-  }
-
-@media screen and (max-width: 600px) {
-.hero-mobile {
-  visibility: visible;
-  display: block;
+  .content {
+    display: block;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   }
 }
 
 .logo {
-  padding: 3em;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: 960px) {
+    .logo {
+      margin-bottom: 20px;
+  }
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .mobile-logo {
+      display: block;
+      margin: 20px 0;
+    
+  }
 }
 
-h1 {
-  font-size: 4em;
-  margin: 0;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.3em;
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+}
 }
 
-.h1-1 {
+.text {
+  display: inline;
+  padding: 4% 10%;
+  background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 960px) {
+  .text {
+    /* background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .text {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-wrap: break-word;
+    text-align: center;
+    padding: 2% 0%;
+    margin: 0%;
+  }
+  
+}
+
+
+.hero-desktop {
+    max-width: 100%;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hero-desktop {
+      display: none;
+  }
+  }
+
+  @media screen and (max-width: 960px) {
+    .hero-desktop {
+      padding-top: 50px;
+     }
+ }
+ 
+  
+  .hero-mobile {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    display: none;
+    }
+  
+  @media screen and (max-width: 600px) {
+  .hero-mobile {
+    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+    }
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--dark-grayish-red);
+    line-height: 70px;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  h1::before{
+    color: var(--desaturated-red);
+    content: "We're ";
+    font-weight: 300;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 50px;
+      
+      }
+    }
+  
+    
+  p {
+    color: var(--desaturated-red);
+  }
+  
+input {
   color: var(--desaturated-red);
+  border: 2px solid var(--desaturated-red);
+  border-radius: 30px;
+  padding:  5px 15px;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  
+  }
+
+@media screen and (max-width: 600px) {
+  input {
+    align-items: center;
+    margin-left: 5%;
+  }
 }
 
-p {
-  color: var(--desaturated-red);
-}
 
-.input {
-  color: var(--desaturated-red);
-  border: 1px solid ;
-  border-radius: 1.7em;
-  padding: 1.5em;
-  height: 50px;
-}
+  @media screen and (max-width: 600px) {
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .form {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
-.icon {
-  background-color: var(--soft-red);
-  color: var(--desaturated-red);
-  padding:  0.5em  1.5em;
-  height: 50px;
-  position: relative;
-  width:80px;
-  border: 1px solid var(--soft-red);
-  border-radius: 1.7em;
-  transform: translateX(-40px);
-}
+ email-input-invalid {
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 80%;
+    border: 2px solid var(--soft-red);
+  }
 
-.icon-image {
-  padding: 0.5em .1em;
-  height: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+  input[type=email]:focus {
+    border: 2px solid var(--desaturated-red);
+    border-radius: 30px;
+    padding:  5px 15px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+  }
+  
+  input.icon {
 
-.form-submission{
-  display: inline-flex;
-}
+    background-image: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:  5px 15px;
+    height: 42px;
+    position: relative;
+    width:25%;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 30px;
+    transform: translateX(-50px); /*can be achieved by using the following 2 lines as well. The two lines are depended on the parent position tho. This one runs smoothly even on systems with limited resources.*/
+    /* position: relative;
+    left: -40px; */
+    cursor: pointer;
+  }
+  
+  .form-submission{
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+  }
 
-.attribution {
-  font-size: 11px; text-align: center; 
+  .invalid-email {
+    display: none;
+    color: var(--desaturated-red);
+    display: none;
+    margin-top: 20px;
+  }
+
+  .valid-email {
+    display: none;
+    color: var(--desaturated-red);
+    display: none;
+    margin-top: 20px;
+  }
+  
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; text-align: center; 
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%); 
 }

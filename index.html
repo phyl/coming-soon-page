@@ -3,55 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
-<body>
-  <div class="container">
-  <main> <!-- Main tag should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms and must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element-->
-<div class="text">
-  <div class="logo">
-    <img src="./images/logo.svg" alt="">
-  </div>
-  <div class="text">
-    
-    <h1 class="h1-1">WE'RE</h1>
-    <h1>COMING SOON</h1>
-    <p>Hello fellow shoppers! We're currently building our new fashion store. 
-      Add your email below to stay up-to-date with announcements and our launch deals.
-    </p>
 
-  <form action="post">
-    <div class="form-submission">
-    <input class="input" type="text" value="Email Address">
-    <div class="icon " >
-      <input type="image" src="/images/icon-arrow.svg" alt="Submit" class="icon-image">
-    </div>
+<body >
+  <main> <!-- Main tag should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms and must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element-->
+
+  <div class="mobile-logo">
+    <img src="images/logo.svg" alt="logo">
   </div>
-</form>
+
+  <div class="hero-mobile">
+    <img src="/images/hero-mobile.jpg" alt="mobile hero image">
+</div>
+
+<div class="content">   
+
+  <div class="text"> 
+
+  <div class="logo">
+    <img src="images/logo.svg" alt="logo">
   </div>
-</div>
-<div class="hero-desktop">
-  <img src="/images/hero-desktop.jpg" alt="">
-</div>
-<div class="hero-mobile">
-    <img src="/images/hero-mobile.jpg" alt="">
-</div>
+    <h1>coming soon</h1>
+    
+    <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+</p>
+<div class="form-container">
+  <form action="post" class="form-submission" name="form1"  autocomplete="off">
   
-</main>
+    <input id="email" type="email" placeholder="email@example.com">
+     <input class="icon "  onclick="ValidateEmail(document.form1.email)"></input>
+     </form>
 </div>
+
+  <div class="invalid-email">Please provide a valid email</div>
+  <div class="valid-email">Thank you! Email has been sent.</div>
+</div> 
+<div class="hero-desktop">
+    <img src="/images/hero-desktop.jpg" alt="">
+  </div>
+  </div>
+  </main>
+
+
+<script src="script.js"></script>
+
+  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.theeaglink.com">The Eaglink</a>.
     </p>
   </footer>
-
+  
 </body>
 </html>
