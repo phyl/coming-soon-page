@@ -20,7 +20,7 @@ else
     document.querySelector(".valid-email").style.display = "none";
     inputText.style.backgroundImage = "url('/images/icon-error.svg')";
     inputText.style.border = "2px solid var(--soft-red)"; 
-    inputText.style.backgroundPosition = "80%";
+    inputText.style.backgroundPosition = "75%";
     inputText.style.backgroundRepeat = "no-repeat";
     // document.getElementById("email").classList.add(".email-input-invalid");
     // document.getElementById("email").classList.remove("input");

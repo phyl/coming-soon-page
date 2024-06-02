@@ -67,7 +67,7 @@ main {
 
 .content {
   display: inline-flex;
-  padding: 10% 5%;
+  /* padding: 10% 5%; */
 }
 
 @media screen and (max-width: 960px) {
@@ -114,7 +114,7 @@ main {
 
 .text {
   display: inline;
-  padding: 4% 10%;
+  padding: 4% 16%;
   background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,7 +245,7 @@ input {
  email-input-invalid {
     background-image: url(images/icon-error.svg);
     background-repeat: no-repeat;
-    background-position: 80%;
+    background-position: 75%;
     border: 2px solid var(--soft-red);
   }
 
@@ -269,10 +269,18 @@ input {
     width:25%;
     border: 1px solid var(--desaturated-red);
     border-radius: 30px;
-    transform: translateX(-50px); /*can be achieved by using the following 2 lines as well. The two lines are depended on the parent position tho. This one runs smoothly even on systems with limited resources.*/
+    transform: translateX(-70%); /*can be achieved by using the following 2 lines as well. The two lines are depended on the parent position tho. This one runs smoothly even on systems with limited resources.*/
     /* position: relative;
     left: -40px; */
     cursor: pointer;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    input.icon {
+      transform: translateX(-80%); /*can be achieved by using the following 2 lines as well. The two lines are depended on the parent position tho. This one runs smoothly even on systems with limited resources.*/
+ 
+  }
   }
   
   .form-submission{
