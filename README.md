@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/phyl/coming-soon-page/tree/main)
-- Live Site URL: [Add live site URL here](https://phyl.github.io/coming-soon-page)
+- Live Site URL: (https://phyl.github.io/coming-soon-page)
 
 ## My process
 
