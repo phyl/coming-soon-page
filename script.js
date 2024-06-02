@@ -18,7 +18,7 @@ else
     document.querySelector(".invalid-email").style.display = "block";
     // document.querySelector(".email-input-invalid").style.display = "block";    
     document.querySelector(".valid-email").style.display = "none";
-    inputText.style.backgroundImage = "url('/images/icon-error.svg')";
+    inputText.style.backgroundImage = "url('./images/icon-error.svg')";
     inputText.style.border = "2px solid var(--soft-red)"; 
     inputText.style.backgroundPosition = "75%";
     inputText.style.backgroundRepeat = "no-repeat";
