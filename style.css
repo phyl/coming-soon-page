@@ -115,7 +115,7 @@ main {
 .text {
   display: inline;
   padding: 4% 16%;
-  background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-image: url(./images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -243,7 +243,7 @@ input {
   }
 
  email-input-invalid {
-    background-image: url(images/icon-error.svg);
+    background-image: url(./images/icon-error.svg);
     background-repeat: no-repeat;
     background-position: 75%;
     border: 2px solid var(--soft-red);
@@ -260,7 +260,7 @@ input {
   
   input.icon {
 
-    background-image: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-image: url(./images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     background-repeat: no-repeat;
     background-position: center;
     padding:  5px 15px;
